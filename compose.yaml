@@ -10,8 +10,7 @@ services:
       - 5232
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.radicale.rule=Host(`${RADICALE_URL}`)"
-      - "traefik.http.routers.radicale.tls=true"
+      - "traefik.http.routers.radicale.rule=Host(`${RADICALE_DOMAIN}`)"
     init: true
     read_only: true
     security_opt:
